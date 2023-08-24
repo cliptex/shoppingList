@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .sil {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex flex-column align-items-center gap-5">
+      <div class="container d-flex gap-4 m-5 justify-content-center">
+        <i class="fa-solid fa-list-check fa-3x"></i>
+        <h1>Shopping List</h1>
+      </div>
+      <input
+        id="input"
+        class="form-control text-center fs-3"
+        type="text"
+        placeholder="Enter Item"
+      />
+      <button id="btn" type="submit" class="btn btn-dark w-25">
+        <span><i class="fa-solid fa-plus" style="color: #ffffff"></i></span> Add
+        Item
+      </button>
+      <form id="form" class="form d-flex flex-column w-50"></form>
+    </div>
+
+    <script src="./5-shoppingList.js"></script>
+  </body>
+</html>
